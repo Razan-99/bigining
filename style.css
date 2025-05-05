@@ -1,0 +1,242 @@
+/* global */
+*{margin:0;
+    padding :0;
+    }
+.bg-black-transparent{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.btn-main{
+    border:none;
+    border-radius:5px;
+    padding:5px;
+    background-color: #6c2e17;
+    color:white
+}
+.btn-main:hover{
+    background-color: #953e1e;
+}
+
+/* HOME PAGE */
+.home{
+    background-image: url(images/cover2.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;   
+}
+.home .layer{
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.home .caption{
+    /* background-color: teal; */
+    position :absolute;
+    top:50%;
+    left :35%;
+    transform : translate(-50% , -50%);
+    color:white;
+    font-family: "Tagesschrift", system-ui;
+}
+
+/* Location */
+.defination .photo{
+    width:47%;
+    display: inline-block;
+
+    padding-right: 50px;
+}
+.defination .photo img{
+    width:100%;
+    
+}
+.defination .txt{
+    
+    width:47%;
+    display: inline-block;
+    
+}
+
+.defination .txt .details img{
+    width:7%;
+    border:#8E7754 solid 2px;
+    border-radius: 50%;
+}
+.defination .txt .details p{
+    display: inline-block;
+    
+    transform: translateY(-17px);
+
+}
+/* end defination */
+
+
+
+/* CONTACT PAGE */
+.contact{
+    background-color: #faf7f3;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact .contact-container{
+    width:60%;
+    margin: 100px; 
+    background-color: white;
+    height: auto;
+    padding:30px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Gallary Page */
+.head{
+    text-align: center;
+    background-color: #F8F8F8;
+    padding: 70px 0;
+}
+
+.gallary .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 30px;
+}
+.gallary .item {
+    width: 32%;
+    overflow: hidden;
+    position: relative;
+}
+.gallary .item img{
+    width: 100%;
+    height: 254px;
+    transition: all 1s;
+}
+.gallary .item:hover img{
+    transform: scale(1.2);
+}
+.gallary .item .layer{
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index: 5;
+    cursor: pointer;
+}
+.gallary .item:hover {
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.gallary .item i{
+    color: transparent;
+}
+.gallary .item:hover i{
+    color: white;
+    position:absolute;
+    left:49%;
+    top:49%;
+    z-index: 7;
+    font-size: x-large;
+    cursor: pointer;
+}
+.light-box{
+    background-color: rgba(0, 0, 0, .4);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    z-index:20;
+    padding :20px 0;
+    
+}
+.light-box .choosen-img img{
+    height: 100%;
+}
+.light-box .choosen-img{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.arrow{
+    width:70%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top:50%;
+
+}
+.light-box i{
+    color: white;
+    font-size: x-large;
+    cursor: pointer;
+}
+
+
+
+/* Start About Page */
+
+
+
+/* Start defination */
+.defination .container{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.defination .video{
+    width:49%;
+    /* display: inline-block; */
+    display: none;
+    /* padding-right: 50px; */
+}
+
+.defination .txt{
+    width:49%;
+    box-sizing: border-box;
+    /* display: inline-block;    */
+}
+
+
+@media screen  and (min-width:992px)  {
+    .defination .container{flex-direction: row;}
+    .defination .video{
+        display: block;
+    }
+}
+
+/* end defination */
+
+/* member  */
+.members{
+    margin-top: 80px;
+    text-align: center;
+    
+}
+.members h1{
+    margin: 40px 0;
+}
+.members h3{
+    font-family: "Playwrite RO", cursive;
+}
+.member-container {
+    width :80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: auto;
+}
+.member{
+    width:24%;
+    /* background-color: teal; */
+    
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+
+}
